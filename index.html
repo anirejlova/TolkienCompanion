@@ -1,89 +1,122 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tolkien Companion</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      color: #222;
-    }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tolkien Companion</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Verdana;
+            color: #101010;
+            background-color: seagreen;
+        }
 
-    header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 24px;
-      border-bottom: 1px solid #ddd;
-    }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            border-bottom: 1px solid #ddd;
+        }
 
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 20px;
-      font-weight: bold;
-    }
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
 
-    .logo {
-      display: grid;
-      width: 36px;
-      height: 36px;
-      place-items: center;
-      border: 1px solid #888;
-      border-radius: 50%;
-    }
+        .logo {
+            display: grid;
+            width: 36px;
+            height: 36px;
+            place-items: center;
+            border: 1px solid #888;
+            border-radius: 50%;
+        }
 
-    .header-actions {
-      display: flex;
-      gap: 8px;
-    }
+        .header-actions {
+            display: flex;
+            gap: 8px;
+        }
 
-    button, nav a {
-      padding: 10px 16px;
-      border: 1px solid #bbb;
-      border-radius: 4px;
-      background: white;
-      color: inherit;
-      font: inherit;
-      text-decoration: none;
-      cursor: pointer;
-    }
+        .header-actions>button {
+            background-color: transparent;
+            color: #101010;
+            border: none;
+        }
 
-    nav {
-      display: flex;
-      gap: 8px;
-      padding: 12px 24px;
-      border-bottom: 1px solid #ddd;
-    }
+        button,
+        nav a {
+            padding: 10px 12px;
+            border-radius: 4px;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
 
-    @media (max-width: 480px) {
-      header { padding: 12px; }
-      .brand { font-size: 16px; }
-      nav { justify-content: space-between; gap: 6px; padding: 10px 12px; }
-      nav a { padding: 9px 10px; font-size: 14px; }
-      .header-actions button { padding: 9px 10px; }
-    }
-  </style>
+        button:hover,
+        nav a:hover {
+            background-color: #444;
+            transition: background-color 0.4s;
+        }
+
+        nav {
+            display: flex;
+            gap: 10px;
+            padding: 12px 24px;
+            justify-content: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        @media (max-width: 480px) {
+            header {
+                padding: 12px;
+            }
+
+            .brand {
+                font-size: 16px;
+            }
+
+            nav {
+                justify-content: space-between;
+                gap: 6px;
+                padding: 10px 12px;
+            }
+
+            nav a {
+                padding: 9px 10px;
+                font-size: 14px;
+            }
+
+            .header-actions button {
+                padding: 9px 10px;
+            }
+        }
+    </style>
 </head>
-<body>
-  <header>
-    <div class="brand">
-      <span class="logo" aria-hidden="true">T</span>
-      <span>Tolkien Companion</span>
-    </div>
-    <div class="header-actions">
-      <button type="button">Settings</button>
-      <button type="button">Profile</button>
-    </div>
-  </header>
 
-  <nav aria-label="Main navigation">
-    <a href="timeline.html">Timeline</a>
-    <a href="characters.html">Characters</a>
-    <a href="places.html">Places</a>
-  </nav>
+<body>
+    <header>
+        <div class="brand">
+            <span class="logo" aria-hidden="true">T</span>
+            <span>Tolkien Companion</span>
+        </div>
+        <div class="header-actions">
+            <button type="button">Settings</button>
+            <button type="button">Profile</button>
+        </div>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="map.html">Map</a>
+        <a href="lore.html">Lore</a>
+    </nav>
 </body>
+
 </html>
