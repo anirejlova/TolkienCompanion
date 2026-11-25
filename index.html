@@ -58,7 +58,6 @@
             cursor: pointer;
         }
 
-        button:hover,
         nav a:hover {
             background-color: #444;
             transition: background-color 0.4s;
@@ -70,6 +69,32 @@
             padding: 12px 24px;
             justify-content: center;
             border-bottom: 1px solid #ddd;
+        }
+
+        .page-layout {
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+            gap: 16px;
+            padding: 16px 24px;
+        }
+
+        .summary,
+        .main-content section {
+            min-height: 240px;
+            padding: 16px;
+            border: 1px solid #ddd;
+        }
+
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        @media (max-width: 700px) {
+            .page-layout {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 480px) {
@@ -117,6 +142,20 @@
         <a href="pages/map.html">Map</a>
         <a href="pages/lore.html">Lore</a>
     </nav>
+
+    <div class="page-layout">
+        <aside class="summary">
+            <h2>Summary</h2>
+        </aside>
+        <main class="main-content">
+            <section>
+                <h2>Characters</h2>
+            </section>
+            <section>
+                <h2>Events</h2>
+            </section>
+        </main>
+    </div>
 </body>
 
 </html>
